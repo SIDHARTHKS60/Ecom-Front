@@ -11,7 +11,8 @@ function HomePage() {
   return (
     <div className="Homepage" style={{ margin: -7 }}>
      
-      
+     <h1>HOMEPAGE</h1> 
+     
     </div>
   )
 }
