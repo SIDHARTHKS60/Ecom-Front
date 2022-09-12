@@ -1,16 +1,49 @@
-import React from 'react'
-import logo  from '../assets/logo1.png'
+import React from "react";
+import ins from "../img/insurance.png";
+import {
+  Nav,
+  NavLink,
+  Bars,
+  NavMenu,
+  NavBtn,
+  NavBtnLink,
+} from "./NavbarElements";
 
-function Navbar() {
+const Navbar = () => {
   return (
-    <div className="navbar">
-        <div className="leftSide">
-            <img src={logo} alt="imag"/>
-        
-        </div>
-        <div className="rightSide"></div>
-    </div>
-  )
-}
+    <>
+      <Nav className="shadow-sm">
+        <Bars />
 
-export default Navbar
+        <NavMenu>
+          <NavLink to="/Home" activestyle style={{ marginRight: "100px" }}>
+            <img src={ins} style={{ height: "50px" }} />
+            <h3 style={{ paddingTop: "10px" }}>E-COMMERCE</h3>
+          </NavLink>
+          <br />
+          <NavLink to="/Home" exact activestyle>
+            Home
+          </NavLink>
+          <NavLink to="/Login" exact activestyle>
+            Login
+          </NavLink>
+          <NavLink to="/Register" exact activestyle>
+            Register
+          </NavLink>
+          <NavLink to="/Products" exact activestyle>
+            Products
+          </NavLink>
+          <NavLink to="/Cart" exact activestyle>
+            Cart
+          </NavLink>
+          <NavLink to="/Payment" exact activestyle>
+            Payment
+          </NavLink>
+          {/* <NavLink><button type="submit" className="btn btn-danger">Log Out</button></NavLink> */}
+        </NavMenu>
+      </Nav>
+    </>
+  );
+};
+
+export default Navbar;

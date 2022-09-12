@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import Axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-function SignUp (){
+export default function SignUp (){
   
   const url = "http://localhost:9090/users/add";
 
@@ -76,7 +76,7 @@ function SignUp (){
         <br />
 
         <div className="mb-3">
-          <label>Password  </label>
+          <label>Password 1 </label>
           <input
             type="password"
             id="password"
@@ -93,11 +93,8 @@ function SignUp (){
           </button>
         </div>
 
-        {/* <p className="forgot-password text-right">
-          Already registered <a href="/sign-in">sign in?</a>
-        </p> */}
       </form>
+      
     );
 
 }
-export default SignUp;

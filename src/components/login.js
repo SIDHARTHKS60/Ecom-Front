@@ -38,10 +38,11 @@ export default class Login extends Component {
   }
   render() {
     return (
-      
       <form onSubmit={this.handleSubmit}>
-        <div><br/></div>
-        
+        <div>
+          <br />
+        </div>
+
         <h3>SIGN IN</h3>
 
         <div className="mb-3">
@@ -53,10 +54,10 @@ export default class Login extends Component {
             onChange={(e) => this.setState({ email: e.target.value })}
           />
         </div>
-        <br/>
+        <br />
 
         <div className="mb-3">
-          <label>Password  : </label>
+          <label>Password : </label>
           <input
             type="password"
             className="form-control"
@@ -65,8 +66,7 @@ export default class Login extends Component {
           />
         </div>
 
-        
-        <br/>
+        <br />
         <div className="d-grid">
           <button type="submit" className="btn btn-primary">
             SUBMIT
@@ -74,7 +74,7 @@ export default class Login extends Component {
         </div>
 
         <p className="forgot-password text-right">
-          <a href="/sign-up">Sign Up</a>
+          <a href="/sign-up">Don't have an account? Sign Up</a>
         </p>
       </form>
     );
