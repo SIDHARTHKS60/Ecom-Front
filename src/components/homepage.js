@@ -15,7 +15,7 @@ function HomePage() {
       <Header />
       <h1>HOMEPAGE 1</h1>
 
-      <div className="Homepage">
+      <div >
         {products.map((product) => {
           
             <div key={product.id} className="a">

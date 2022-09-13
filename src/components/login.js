@@ -38,45 +38,50 @@ export default class Login extends Component {
   }
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
-        <div>
+      <div>
+        <form
+          onSubmit={this.handleSubmit}
+          style={{
+            width: "800px",
+            margin: "0 auto",
+            font: "Arial",
+            padding: "30px",
+          }}
+        >
+          {/* <div>
+            <br />
+          </div> */}
+
+          <h3 style={{}}>LOG IN</h3>
+
+          <div >
+            <label>USERNAME </label>
+            <input
+              type="text"
+              placeholder="Enter UserName"
+              onChange={(e) => this.setState({ email: e.target.value })}
+            />
+          </div>
           <br />
-        </div>
 
-        <h3>SIGN IN</h3>
-
-        <div className="mb-3">
-          <label>User Name : </label>
-          <input
-            type="email"
-            className="form-control"
-            placeholder="Enter UserName"
-            onChange={(e) => this.setState({ email: e.target.value })}
-          />
-        </div>
-        <br />
-
-        <div className="mb-3">
-          <label>Password : </label>
-          <input
-            type="password"
-            className="form-control"
-            placeholder="Enter Password"
-            onChange={(e) => this.setState({ password: e.target.value })}
-          />
-        </div>
-
-        <br />
-        <div className="d-grid">
-          <button type="submit" className="btn btn-primary">
+          <div>
+            <label>PASSWORD </label>
+            <input
+              type="password"
+              placeholder="Enter Password"
+              onChange={(e) => this.setState({ password: e.target.value })}
+            />
+          </div>
+          <br />
+          <button type="submit" className="button-container" style={{}}>
             SUBMIT
           </button>
-        </div>
 
-        <p className="forgot-password text-right">
-          <a href="/sign-up">Don't have an account? Sign Up</a>
-        </p>
-      </form>
+          <p>
+            <a href="/sign-up">Don't have an account? Sign Up</a>
+          </p>
+        </form>
+      </div>
     );
   }
 }

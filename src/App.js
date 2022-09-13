@@ -1,13 +1,11 @@
-import Register from "./components/Register";
-import Navbar from "./components/Navbar";
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-//import VehicleDetails from "./components/VehicleDetails";
-//import Endpoint from "./Endpoint/endpoint"
+import Navbar from "./components/Navbar";
 import Home from "./components/Home";
-import InsuranceBooking from "./components/InsuranceBooking";
 import Login from "./components/Login";
-import Payment from "./components/Payment";
+import Signup from "./components/Signup";
+import Products from "./components/Products"
+ //import Payment from "./components/Payment";
 
 function App() {
   return (
@@ -19,10 +17,8 @@ function App() {
             <Route exact path="/" element={<Home />}></Route>
             <Route exact path="/Home" element={<Home />} />
             <Route exact path="/Login" element={<Login />} />
-            <Route exact path="/Register" element={<Register />} />
-            <Route exact path="/Product" element={<VehicleDetails />} />
-            <Route exact path="/InsuranceBooking" element={<InsuranceBooking />}/>
-            <Route exact path="/Payment" element={<Payment />} />
+            <Route exact path="/Signup" element={<Signup />} />
+            <Route exact path="/Products" element={<Products />} />
           </Routes>
         </div>
       </Router>

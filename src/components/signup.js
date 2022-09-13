@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import Axios from "axios";
 import { useNavigate } from "react-router-dom";
+import "../styles.css";
 
 export default function SignUp (){
   
@@ -20,24 +21,27 @@ export default function SignUp (){
   function submit(e) {
     //e.preventDefault();
     Axios.post(url, {
-      id: data.id,
-      name: data.name,
-      contactno: data.contactno,
-      password:data.password
+      userId: data.id,
+      userName: data.name,
+      userContactno: data.contactno,
+      userPassword:data.password
     }).then((res) => {
       console.log(res.data);
     });
     
-    navigate("/homepage")
+    navigate("/Products")
       
   }
     
     return (
-      <form onSubmit={(e) => submit(e)}>
+      <form
+        onSubmit={(e) => submit(e)}
+        style={{ width: "800px", margin: "0 auto", font: "Arial" ,border:"25px"}}
+      >
         <h3>SIGN UP</h3>
 
         <div className="mb-3">
-          <label>User ID  </label>
+          <label>USER ID </label>
           <input
             type="text"
             id="id"
@@ -50,7 +54,7 @@ export default function SignUp (){
         <br />
 
         <div className="mb-3">
-          <label>User Name  </label>
+          <label>USER NAME </label>
           <input
             type="text"
             id="name"
@@ -58,12 +62,13 @@ export default function SignUp (){
             onChange={(e) => handle(e)}
             className="form-control"
             placeholder=" User name"
+            style={{ width: "20%" }}
           />
         </div>
         <br />
 
         <div className="mb-3">
-          <label>Contact No.  </label>
+          <label>CONTACT NO. </label>
           <input
             type="text"
             id="contactno"
@@ -76,7 +81,7 @@ export default function SignUp (){
         <br />
 
         <div className="mb-3">
-          <label>Password 1 </label>
+          <label>PASSWORD </label>
           <input
             type="password"
             id="password"
@@ -89,12 +94,10 @@ export default function SignUp (){
         <br />
         <div className="d-grid">
           <button type="submit" className="btn btn-primary">
-            Sign Up
+            SIGN UP
           </button>
         </div>
-
       </form>
-      
     );
 
 }
