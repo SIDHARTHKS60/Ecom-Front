@@ -7,9 +7,8 @@ import Img3 from "../images/top/img3.png";
 import Img4 from "../images/top/img4.png";
 import Img5 from "../images/top/img5.png";
 import Img6 from "../images/top/img6.png";
-import Img7 from "../images/top/img7.png";
 
-const topImages = [Img5, Img6, Img7, Img1, Img2, Img3, Img4];
+const topImages = [Img5, Img6,Img1, Img2, Img3, Img4];
 export default function Home() {
   return (
     <div>

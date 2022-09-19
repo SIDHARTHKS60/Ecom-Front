@@ -17,8 +17,8 @@ const Navbar = () => {
 
         <NavMenu>
           <NavLink to="/Home" activestyle style={{ marginRight: "10px", marginLeft:"20px" }}>
-            <img src={ins} style={{ height: "50px" }} />
-            <h3 style={{ paddingTop: "10px",color:"red", marginLeft:"10px" }} >E-COMMERCE</h3>
+            <img src={ins} style={{ height: "80px" }} />
+            <h3 style={{ paddingTop: "10px",color:"blue", marginLeft:"20px" }} >E-COMMERCE</h3>
           </NavLink>
           <br />
           <NavLink to="/Home" exact activestyle>
@@ -34,10 +34,10 @@ const Navbar = () => {
             PRODUCTS
           </NavLink>
           <NavLink to="/Cart" exact activestyle>
-            Cart
+            CART
           </NavLink>
           <NavLink to="/Payment" exact activestyle>
-            Payment
+            PAYMENT
           </NavLink>
         </NavMenu>
       </Nav>

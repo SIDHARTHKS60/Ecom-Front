@@ -1,0 +1,45 @@
+[
+  {
+    "productId": 1,
+    "productName": "Phone 1",
+    "productPrice": 80000,
+    "image": "img1",
+    "qty": 1
+  },
+  {
+    "productId": 2,
+    "productName": "Phone 2",
+    "productPrice": 60000,
+    "image": "img2",
+    "qty": 1
+  },
+  {
+    "productId": 3,
+    "productName": "Phone 3",
+    "productPrice": 50000,
+    "image": "img3",
+    "qty": 1
+  },
+  {
+    "productId": 4,
+    "productName": "Laptop 1",
+    "productPrice": 90000,
+    "image": "img4",
+    "qty": 1
+  },
+  {
+    "productId": 5,
+    "productName": "Laptop 2",
+    "productPrice": 70000,
+    "image": "img5",
+    "qty": 1
+  },
+
+  {
+    "productId": 6,
+    "productName": "Laptop 3",
+    "productPrice": 40000,
+    "image": "img6",
+    "qty": 1
+  }
+]

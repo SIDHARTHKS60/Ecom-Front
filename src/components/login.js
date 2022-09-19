@@ -9,8 +9,15 @@ export default class Login extends Component {
     };
     this.handleSubmit = this.handleSubmit.bind(this);
   }
+
+  
+
   handleSubmit(e) {
     e.preventDefault();
+    const errors = {
+      uname: "invalid username",
+      pass: "invalid password",
+    };
     const { email, password } = this.state;
     console.log(email, password);
     fetch("http://localhost:9090/login-user", {
@@ -39,18 +46,15 @@ export default class Login extends Component {
   render() {
     return (
       <div>
-        <form
-          onSubmit={this.handleSubmit}
+        <form onSubmit={this.handleSubmit}
           style={{
             width: "800px",
             margin: "0 auto",
             font: "Arial",
             padding: "30px",
+            
           }}
         >
-          {/* <div>
-            <br />
-          </div> */}
 
           <h3 style={{}}>LOG IN</h3>
 

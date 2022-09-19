@@ -8,7 +8,7 @@ const ImageSlider = ({ topImages }) => {
           <img
             key={i}
             src={item}
-            style={{ height: 500, width: "100%" }}
+            style={{ height: 600, width: 1000, }}
             alt=""
           />
         ))}
